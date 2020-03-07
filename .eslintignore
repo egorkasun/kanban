@@ -1,0 +1,4 @@
+# Стиль автоматически генерируемых типов отличается от правил ESLint
+types
+external-types
+webpack.*.js

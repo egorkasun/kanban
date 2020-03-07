@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "declaration-property-value-blacklist": [],
+    "selector-no-qualifying-type": null,
+    "selector-max-compound-selectors": null,
+    "max-nesting-depth": null
+  }
+}
