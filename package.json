@@ -4,13 +4,13 @@
   "description": "доска с тремя столбцами",
   "main": "dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "start": "npm run sass && npm run copyLedaStyles && webpack-dev-server --config webpack.dev.config.js",
     "lint": "eslint src --color --ext .ts,.tsx",
     "build": "webpack --config webpack.prod.config.js && npm run sass",
-    "copyLedaStyles": "mkdirp /leda && ncp node_modules/leda/public/assets/css/themes/leda/styles.css public/leda/styles.css",
+    "copyLedaStyles": "mkdirp public/styles/leda && ncp node_modules/leda/public/ public/styles/leda/",
     "check": "npm run lint && npm run tsc",
     "sass": "node-sass ./src/styles/ -o ./public/styles/",
-    "sass:watch": "node-sass --watch ./src/styles/ -o ./public/",
+    "sass:watch": "node-sass --watch ./src/styles/ -o ./public/styles/",
     "tsc": "tsc"
   },
   "author": "egorkasun",

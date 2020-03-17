@@ -9,4 +9,4 @@ ReactDOM.render(
   container,
 );
 
-document.body.appendChild(container);
+document.body.appendChild(container); // чтобы отобразить контейнер в браузере

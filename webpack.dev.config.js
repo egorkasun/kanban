@@ -16,11 +16,6 @@ module.exports = merge(commonConfig, {
     overlay: true,
     watchContentBase: true,
     proxy: {
-      // ask your backend what urls you should use
-      // more details: https://github.com/webpack/docs/wiki/webpack-dev-server#proxy
-      '/mail': {
-        target: 'http://localhost:3000',
-      },
     },
     contentBase: path.resolve('public'),
   },
