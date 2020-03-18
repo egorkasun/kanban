@@ -12,3 +12,6 @@ body {
   .card .title {
     font-size: 45px;
     text-align: center; }
+
+.pointer {
+  cursor: pointer; }
