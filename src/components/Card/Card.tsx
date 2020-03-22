@@ -42,17 +42,16 @@ export const Card = (props: CardProps): React.ReactElement => {
   };
 
   const handleInputChange = (ev: L.InputTypes.ChangeEvent) => {
-    setInputValue(ev.component.value); /* введеный текст передается в inputValue c помощью библиотечной
-    функции onChange, которой всегда передается функция с аргументом ev */
+    setInputValue(ev.component.value);
   };
 
   const handleInputEnterPress = () => {
     if (inputValue === '') {
-      return; // так прерываем функцию
+      return;
     }
 
     const newTask: TaskItem = {
-      id: new Date().getTime().toString(), // создаём id по текущему времени
+      id: new Date().getTime().toString(),
       title: inputValue,
       isDone: false,
     };
@@ -84,7 +83,7 @@ export const Card = (props: CardProps): React.ReactElement => {
         ))}
       </L.Ul>
       <L.Input
-        value={inputValue} // отображается в поле ввода то что находится а inputValue
+        value={inputValue}
         onChange={handleInputChange}
         placeholder="Добавьте задачу"
         onEnterPress={handleInputEnterPress}
